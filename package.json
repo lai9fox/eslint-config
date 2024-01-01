@@ -1,26 +1,36 @@
 {
-  "name": "@lai9fox/eslint-config-js",
+  "name": "@lai9fox/eslint-config",
   "version": "1.0.0",
-  "description": "eslint eslint-config",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "eslint configurations used by lai9fox",
+  "main": "default.js",
+  "files": [
+    "*.js",
+    "lib/**",
+    "!.eslintrc.js"
+  ],
+  "scripts": {},
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "vue"
+  ],
+  "author": "lai9fox",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lai9fox/eslint-config.git"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
-  "author": "",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lai9fox/eslint-config/issues"
   },
   "homepage": "https://github.com/lai9fox/eslint-config#readme",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 8"
+  },
   "devDependencies": {
-    "eslint": "^8.33.0"
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "vue-eslint-parser": "^9.3.2"
   }
 }

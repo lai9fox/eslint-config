@@ -29,7 +29,7 @@ module.exports = {
 ### 安装依赖
 
 ```shell
-npm install -D eslint-plugin-vue vue-eslint-parser
+npm install -D eslint eslint-plugin-vue vue-eslint-parser
 ```
 
 ### 配置

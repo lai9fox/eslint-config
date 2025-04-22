@@ -1,44 +1,20 @@
-<!-- TOC -->
-  * [`js` 配置](#js-配置)
-    * [安装依赖](#安装依赖)
-    * [配置](#配置)
-  * [`vue(js)` 配置](#vuejs-配置)
-    * [安装依赖](#安装依赖-1)
-    * [配置](#配置-1)
-<!-- TOC -->
-
-## `js` 配置
-
-### 安装依赖
+### 安装
 
 ```shell
-npm install -D eslint
+pnpm i -D eslint @lai9fox/eslint-config
 ```
 
-### 配置
+### JS 配置
 
-```js
-// .eslintrc.js
-module.exports = {
-  extends: '@lai9fox/eslint-config', // '@lai9fox/eslint-config/js'
-  // 其他 eslint 配置
-};
+```javascript
+// eslint.config.js
+import configs from '@lai9fox/eslint-config';
+import { defineConfig } from 'eslint/config';
+
+export default defineConfig([
+  {
+    files: ['**/*.{js,mjs,cjs}'],
+    extends: [configs.jsConfig],
+  },
+]);
 ```
-## `vue(js)` 配置
-
-### 安装依赖
-
-```shell
-npm install -D eslint eslint-plugin-vue vue-eslint-parser
-```
-
-### 配置
-
-```js
-// .eslintrc.js
-module.exports = {
-  extends: '@lai9fox/eslint-config/vue-js',
-  // 其他 eslint 配置
-};
-```
-

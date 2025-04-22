@@ -1,8 +1,9 @@
 {
   "name": "@lai9fox/eslint-config",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "eslint configurations used by lai9fox",
-  "main": "default.js",
+  "main": "./src/index.js",
+  "type": "module",
   "files": [
     "*.js",
     "lib/**",
@@ -26,11 +27,12 @@
   "homepage": "https://github.com/lai9fox/eslint-config#readme",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": ">= 9"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.19.2",
-    "vue-eslint-parser": "^9.3.2"
+    "@eslint/js": "^9.25.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "eslint": "^9.25.0",
+    "globals": "^16.0.0"
   }
 }

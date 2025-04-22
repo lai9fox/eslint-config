@@ -1,13 +1,13 @@
 import js from '@eslint/js';
 import { defineConfig } from 'eslint/config';
 import stylistic from '@stylistic/eslint-plugin';
+import globals from 'globals';
 
 export default defineConfig([
   js.configs.recommended,
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   {
-    plugins: {
-      '@stylistic': stylistic,
-    },
+    plugins: { '@stylistic': stylistic },
     rules: {
       'no-await-in-loop': 'error',
       'no-debugger': 'warn',
@@ -15,33 +15,41 @@ export default defineConfig([
       'no-self-compare': 'error',
       'no-use-before-define': 'error',
       'no-useless-assignment': 'error',
-      'curly': 'error',
+      curly: 'error',
       'default-case': 'error',
       'default-case-last': 'error',
-      'eqeqeq': 'error',
+      eqeqeq: 'error',
       'max-depth': 'warn',
       'no-else-return': 'warn',
       'no-nested-ternary': 'error',
       'no-param-reassign': 'error',
       'no-var': 'error',
       'prefer-template': 'warn',
+      '@stylistic/array-bracket-newline': ['error', { multiline: true } ],
+      '@stylistic/array-element-newline': ['error', { consistent: true, multiline: true } ],
       '@stylistic/arrow-spacing': 'error',
-      '@stylistic/array-bracket-newline': ['error', 'consistent'],
       '@stylistic/brace-style': 'error',
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/comma-spacing': 'error',
-      '@stylistic/curly-newline': ['error', { consistent: true }],
+      '@stylistic/curly-newline': ['error', { multiline: true }],
       '@stylistic/eol-last': 'error',
+      '@stylistic/function-call-spacing': 'error',
+      '@stylistic/function-call-argument-newline': ['error', 'consistent'],
       '@stylistic/indent': ['error', 2],
       '@stylistic/no-confusing-arrow': 'error',
       '@stylistic/no-extra-semi': 'error',
       '@stylistic/no-mixed-spaces-and-tabs': 'error',
       '@stylistic/no-multi-spaces': 'error',
+      '@stylistic/no-multiple-empty-lines': 'error',
       '@stylistic/no-trailing-spaces': 'error',
-      '@stylistic/object-curly-newline': ['error', { consistent: true }],
+      '@stylistic/no-whitespace-before-property': 'error',
+      '@stylistic/object-curly-newline': ['error', { multiline: true }],
       '@stylistic/object-curly-spacing': ['error', 'always'],
       '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/quote-props': ['error', 'as-needed'],
       '@stylistic/semi': 'error',
+      '@stylistic/semi-spacing': 'error',
+      '@stylistic/template-curly-spacing': ['error', 'always'],
     },
   },
 ]);

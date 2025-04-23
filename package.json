@@ -25,11 +25,13 @@
   "peerDependencies": {
     "eslint": ">= 9"
   },
-  "devDependencies": {
+  "dependencies": {
     "@eslint/js": "^9.25.0",
     "@stylistic/eslint-plugin": "^4.2.0",
-    "eslint": "^9.25.0",
     "globals": "^16.0.0",
     "typescript-eslint": "^8.31.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.25.0"
   }
 }

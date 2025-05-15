@@ -15,7 +15,7 @@ export default defineConfig([
       'no-self-compare': 'error',
       'no-use-before-define': 'error',
       'no-useless-assignment': 'error',
-      curly: ['error', 'multi', 'consistent'],
+      curly: ['error', 'multi-line'],
       'default-case': 'error',
       'default-case-last': 'error',
       eqeqeq: 'error',

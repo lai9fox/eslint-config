@@ -18,6 +18,7 @@ export default defineConfig([
       curly: ['error', 'multi-line'],
       'default-case': 'error',
       'default-case-last': 'error',
+      'default-param-last': 'error',
       eqeqeq: 'error',
       'max-depth': 'warn',
       'no-else-return': 'warn',

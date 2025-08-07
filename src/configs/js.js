@@ -11,7 +11,7 @@ export default defineConfig([
       'no-debugger': 'warn',
       'no-duplicate-imports': 'error',
       'no-self-compare': 'error',
-      'no-use-before-define': 'error',
+      'no-use-before-define': ['error', { functions: false }],
       'no-useless-assignment': 'error',
       curly: ['error', 'multi-line'],
       'default-case': 'error',

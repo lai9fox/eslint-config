@@ -41,6 +41,7 @@ export default defineConfig([
       'vue/quote-props': ['error', 'as-needed'],
       'vue/space-in-parens': ['error', 'never'],
       'vue/template-curly-spacing': ['error', 'always'],
+      'vue/max-attributes-per-line': ['warn', { singleline: 3, multiline: 1 }],
     },
   },
 ]);

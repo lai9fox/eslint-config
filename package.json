@@ -1,6 +1,6 @@
 {
   "name": "@lai9fox/eslint-config",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Shared eslint configurations used by lai9fox",
   "main": "./src/index.js",
   "type": "module",

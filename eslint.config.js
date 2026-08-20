@@ -1,10 +1,5 @@
-import configs from './src/index.js';
-import { defineConfig } from 'eslint/config';
+import lai from './src/index.js';
 
-
-export default defineConfig([
-  {
-    files: ['**/*.{js,mjs,cjs}'],
-    extends: [configs.jsConfig],
-  },
-]);
+export default lai({
+  javascript: true,
+});

@@ -1,2 +1,2 @@
-export { lai } from './factory.js';
-export { lai as default } from './factory.js';
+export { eslintConfig } from './factory.js';
+export { eslintConfig as default } from './factory.js';

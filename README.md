@@ -10,9 +10,9 @@ pnpm i -D eslint@^10 @lai9fox/eslint-config
 
 ```javascript
 // eslint.config.js
-import lai from "@lai9fox/eslint-config";
+import eslintConfig from "@lai9fox/eslint-config";
 
-export default lai({
+export default eslintConfig({
   // 默认均为：javascript: true, stylistic: true
 });
 ```
@@ -20,9 +20,9 @@ export default lai({
 ### TypeScript
 
 ```javascript
-import lai from "@lai9fox/eslint-config";
+import eslintConfig from "@lai9fox/eslint-config";
 
-export default lai({
+export default eslintConfig({
   typescript: true,
 });
 ```
@@ -30,9 +30,9 @@ export default lai({
 ### Vue 3
 
 ```javascript
-import lai from "@lai9fox/eslint-config";
+import eslintConfig from "@lai9fox/eslint-config";
 
-export default lai({
+export default eslintConfig({
   vue: true,
 });
 ```
@@ -40,9 +40,9 @@ export default lai({
 ### TypeScript + Vue
 
 ```javascript
-import lai from "@lai9fox/eslint-config";
+import eslintConfig from "@lai9fox/eslint-config";
 
-export default lai({
+export default eslintConfig({
   typescript: true,
   vue: true,
 });
@@ -51,10 +51,10 @@ export default lai({
 ### 覆盖规则与行为
 
 ```javascript
-import lai from "@lai9fox/eslint-config";
+import eslintConfig from "@lai9fox/eslint-config";
 import globals from "globals";
 
-export default lai({
+export default eslintConfig({
   typescript: true,
   vue: true,
   stylistic: true, // 设为 false 可关闭 @stylistic 规则（不影响 vue/* 风格规则）

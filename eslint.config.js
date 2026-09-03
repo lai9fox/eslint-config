@@ -1,5 +1,5 @@
-import lai from './src/index.js';
+import eslintConfig from './src/index.js';
 
-export default lai({
+export default eslintConfig({
   javascript: true,
 });

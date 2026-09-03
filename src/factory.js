@@ -6,7 +6,7 @@ import { typescript } from './configs/typescript.js';
 import { vue } from './configs/vue.js';
 
 /**
- * @typedef {Object} LaiOptions
+ * @typedef {Object} ESLintConfigOptions
  * @property {boolean} [javascript=true]
  * @property {boolean} [typescript=false]
  * @property {boolean} [vue=false]
@@ -19,10 +19,10 @@ import { vue } from './configs/vue.js';
 /**
  * Shared ESLint flat config factory.
  *
- * @param {LaiOptions} [options]
+ * @param {ESLintConfigOptions} [options]
  * @returns {import('eslint').Linter.Config[]}
  */
-export function lai(options = {}) {
+export function eslintConfig(options = {}) {
   const {
     javascript: enableJavascript = true,
     typescript: enableTypescript = false,

@@ -1,17 +1,20 @@
 {
   "name": "@lai9fox/eslint-config",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "Shared eslint configurations used by lai9fox",
   "main": "./src/index.js",
   "type": "module",
   "files": [
     "src/**"
   ],
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint ."
+  },
   "keywords": [
     "eslint",
     "eslint-config",
     "javascript",
+    "typescript",
     "vue"
   ],
   "author": "lai9fox",
@@ -25,15 +28,16 @@
   "homepage": "https://github.com/lai9fox/eslint-config#readme",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">=10"
   },
   "dependencies": {
-    "@eslint/js": "^9.32.0",
-    "@stylistic/eslint-plugin": "^4.4.1",
-    "eslint-plugin-vue": "^10.4.0",
-    "typescript-eslint": "^8.38.0"
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-plugin-vue": "^10.10.0",
+    "typescript-eslint": "^8.67.0",
+    "vue-eslint-parser": "^10.4.1"
   },
   "devDependencies": {
-    "eslint": "^9.32.0"
+    "eslint": "^10.8.1"
   }
 }

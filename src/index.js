@@ -1,11 +1,2 @@
-import jsConfig from './configs/js.js';
-import tsConfig from './configs/ts.js';
-import jsVueConfig from './configs/jsVue.js';
-
-export const configs = {
-  jsConfig,
-  tsConfig,
-  jsVueConfig,
-};
-
-export default configs;
+export { eslintConfig } from './factory.js';
+export { eslintConfig as default } from './factory.js';
